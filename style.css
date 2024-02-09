@@ -143,6 +143,15 @@ button:hover {
     background-repeat: no-repeat;
 }
 
+#resources-hero-image {
+    background:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+    url("img/resources.jpg"); /* https://commons.wikimedia.org/wiki/File:Map_of_long_distance_telephone_and_telegraph_lines_in_Trier,_Germany,_May_1919_(86729716).jpg */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
 .disclaimer {
     padding: 0px 15px;
 }

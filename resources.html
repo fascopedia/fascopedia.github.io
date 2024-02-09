@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+    <title>Fascopedia</title>
+    <!-- Thanks to Kaki on Stack Overflow for instructions on Discord embeds :) -->
+    <meta content="Fascopedia - Italian Fascism" property="og:title" />
+    <meta content="A website covering the history of Fascism from 1900 to 1939, made by Mika :)" property="og:description" />
+    <meta content="https://themika01.github.io/" property="og:url" />
+    <meta content="https://themika01.github.io/img/favicon-big.png" property="og:image" />
+    <meta content="#dd3d3d" data-react-helmet="true" name="theme-color" />
+    <!-- Noto-Sans font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar Section -->
+    <div id="nav-bar">
+        <table id="nav-table-desktop">
+            <tr>
+                <td class="oopsie"><a href="index.html"><button>Home</button></a></td>
+                <div class="dropdown">
+                    <td class="oopsie"><button class="dropBtn" onclick="openDrop(0)">General History</button></td>
+                    <div class="hidden drop-down-section" id="general-history-section">
+                        <a href="origin.html">The Origins of Fascism</a>
+                        <p>Defining Fascism</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <td class="oopsie"><button class="dropBtn" onclick="openDrop(1)">Fascisms</button></td>
+                    <div class="hidden drop-down-section" id="fascisms-section">
+                        <p>Italian Fascism</p>
+                        <p>German Fascism/Naziism</p>
+                        <p>Spanish Fascism/Francoism</p>
+                        <p>British Fascism</p>
+                        <p>Japanese Fascism</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <td class="oopsie"><button class="dropBtn" onclick="openDrop(2)">Fascist Figures</button></td>
+                    <div class="hidden drop-down-section" id="figures-section">
+                        <p>Mussolini</p>
+                        <p>Hitler</p>
+                        <p>Franco</p>
+                        <p>Mosely</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <td class="oopsie"><button class="dropBtn" onclick="openDrop(3)">Further Reading</button></td>
+                    <div class="hidden drop-down-section" id="further-section">
+                        <p>Neo-Fascism</p>
+                        <a href="blog.html">Blog</a>
+                        <p>Bibliography</p>
+                        <a href="resources.html">Learn to make a website</a>
+                    </div>
+                </div>
+            </tr>
+        </table>
+        <!-- Nav Bar for mobile screens -->
+        <button id="nav-opener-mobile" class="dropBtn" onclick="openDrop(4)">Navigate Articles</button>
+        <div class="hidden drop-down-section" id="mobile-section">
+            <a href="index.html">Home</a>
+            <h3>General History</h3>
+            <a href="origin.html">Origins of Fascism</a>
+            <p>Defining Fascism</p>
+            <h3>Fascisms</h3>
+            <p>Italian</p>
+            <p>German Fascism/Naziism</p>
+            <p>Spanish Fascism/Francoism</p>
+            <p>British Fascism</p>
+            <p>Japanese Fascism</p>
+            <h3>Fascist Figures</h3>
+            <p>Mussolini</p>
+            <p>Hitler</p>
+            <p>Franco</p>
+            <p>Mosely</p>
+            <h3>Further Reading</h3>
+            <p>Neo-Fascism</p>
+            <a href="blog.html">Blog</a>
+            <p>Bibliography</p>
+            <a href="resources.html">Learn to make a website</a>
+        </div>
+    </div>
+    <!-- Website content -->
+    <div id="main-content-div">
+        <div class="hero-image-div" id="resources-hero-image" title="">
+            <div id="title-heading">
+                <h1>Website Resources</h1>
+            </div>
+        </div>
+        <div class="content-div">
+            <p>You! Yes, you! You should build things. You should make art. You have a great idea right now that will only be unique for so long. 
+                If you don't make it, someone else will, and chances are they'll make it differently than you would have liked to. Maybe your 
+                idea is a website, or a program, or an app. Maybe it's not, but you'd like a website to advertise it. If you don't have an idea 
+                like that now, you might in the future! Coding, especially web development, is easy to learn and it is incredibly useful 
+                to be able to make any web page you want, whenver you want, how you want, for free.
+            </p>
+            <p>I'm no teacher, and there are already plenty of ways out there to learn code. The purpose of this page is just to be a 
+                jumping off point for you. This is a list of resources that are useful for learning to make websites and host them. The best 
+                piece of advice I can give you: learn by doing. Think of a project idea and start working on it. You can only read and watch 
+                so much material before you need to actually use it to understand it. Pick something that you're passionate about or that seems 
+                fun, and start making it!
+            </p>
+            <h3>What code should I learn?</h3>
+            <p>For website development, start with HTML and CSS. HTML stands for HyperText Markup Language, and it gives structure to your website. 
+                CSS stands for Cascading Style Sheets, and it gives your websites their aesthetics. After that, move on to JavaScript, which is 
+                the first actual proper "coding language" to learn. This lets you make your websites interactive - clicking on a button will 
+                actually do something!
+            </p>
+            <p>From there, you can move on to the "backend" if you'd like. These are languages that handle user interactions over time. 
+                You'll be working with spreadsheets and servers. I don't know much about backend to be honest, but I believe the popular 
+                languages are Next.Js, ExpressJS, and SQL. To make it simple:
+            </p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Backend frameworks such as Next.Js</li>
+            </ul>
+            <h3>What do I need to code a website?</h3>
+            <p>At it's heart, all you need is a text editor and an internet browser. Create a file with the ending ".html" (rather than .txt) and open it with your text editor. 
+                From there you can add whatever code you want. Then, when you're ready, open that same file but with an internet browser. That's all it takes!
+            </p>
+            <p>That being said, there are many Integrated Development Enviornments (IDE's) and also fancy text editors that make coding easier. Two popular ones for web development are:</p>
+            <ul>
+                <li>Visual Studio Code (vscode)</li>
+                <li>Sublime Text</li>
+            </ul>
+            <h3>Documentation Learning</h3>
+            <p>These websites host documentation on HTML and CSS. This means that they are both tutorials and general resources for coders to 
+                use whenever they need to learn how a particular piece of code works. Personally, I've found these tools the most useful. Read a couple of their 
+                tutorials and then start building something. Anytime you don't know how to do something, look it up in the documentation. Rinse and repeat.
+            </p>
+            <ul>
+                <li><a href="https://www.w3schools.com/">w3schools</a> provides a great set of structured tutorials. They are easy to follow and they 
+                provide you with a code editor inside the website.</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Mozilla</a> is the company that made Firefox, 
+                and they also host some of the best documentation on HTML and CSS on the internet. Their tutorials are less structured and more technical. 
+                This makes them more difficult than w3schools, but you also learn more.</li>
+            </ul>
+            <h3>YouTube Learning</h3>
+            <p>There are many, many, many, many tutorials on coding available on YouTube. I honestly don't watch them much, so I don't have any specific 
+                ones I can recommend. That being said, you know how to find YouTube videos - look up "learn HTML", "learn web development", etc. and off you go! 
+                Lots of these videos will be something like "Learn HTML (FULL COURSE)" which are 6 hours long and meant to be treated as a series of lectures. If 
+                that sort of learning suits you, go for it! Just remember to try your best to learn by doing. Whatever the YouTuber is doing in the video, 
+                open up your own project and do the same things, try changing them up a little and see what happens!
+            </p>
+            <h3>Courses</h3>
+            <p>If you go to a university, you may be able to just take a web development class. Take a look around! Another useful avenue are certification programs. 
+                Sometimes certification programs will also partner with universities, so look around if you're a uni student. Certification programs tend to be 
+                quick and high intensity, but they can help you pick up some skills. You also get a nifty certificate saying you know how to code at the end, 
+                which you can put on your resume. The only certification program I have experience with are the Global Tech Experience, who partner with many universities across the world. 
+                Look around on your search engine for the Global Tech Experience, they might pop up in your university sometime.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
