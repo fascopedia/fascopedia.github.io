@@ -283,6 +283,10 @@ th {
     text-align: center;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .govts {
     height: 600px;
     outline: 3px ridge #e0ca78;
