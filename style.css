@@ -212,6 +212,11 @@ table {
     text-align: center;
 }
 
+#contents {
+    width: 50%;
+    margin: auto;
+}
+
 td, th {
     padding: 5px;
     width: 25%;

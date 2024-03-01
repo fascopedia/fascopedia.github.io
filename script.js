@@ -15,12 +15,11 @@ function openDrop(number) {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropBtn')) {
-    var i;
-    for (i = 0; i < sections.length; i++) {
-      var openDropdown = sections[i];
+    for (let i = 0; i < sections.length; i++) {
+      let openDropdown = sections[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
     }
   }
-} 
+}
