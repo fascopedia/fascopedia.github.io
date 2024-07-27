@@ -152,6 +152,15 @@ button:hover {
     background-repeat: no-repeat;
 }
 
+#genocide-hero-image {
+    background:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+    url("img/Omar.jpg"); /* https://commons.wikimedia.org/wiki/File:Omar_Mokhtar_arrested_by_Italian_Officials.jpg */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
 .disclaimer {
     padding: 0px 15px;
 }
